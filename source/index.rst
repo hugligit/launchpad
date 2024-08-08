@@ -6,6 +6,13 @@
 Welcome to Launchpad's documentation!
 =====================================
 
+* `FdA <https://hugligit.github.io/FdA/html/index.html>`_
+* `Curriculum <https://hugligit.github.io/tmp/>`_
+* `Intervention <https://hugligit.github.io/tmp/revealjs>`_
+
+.. * `a link`_.
+.. .. _a link: https://hugligit.github.io/FdA/html/index.html
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
