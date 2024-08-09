@@ -3,25 +3,25 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Launchpad's documentation!
-=====================================
+========
+Notebook
+========
 
-* `FdA <https://hugligit.github.io/FdA/html/index.html>`_
-* `Curriculum <https://hugligit.github.io/tmp/>`_
-* `Intervention <https://hugligit.github.io/tmp/revealjs>`_
+Organized collection of random facts.
+
+
+
+* `FdA <https://hugligit.github.io/FdA/html/>`_
+* `School <https://hugligit.github.io/school/>`_
+* `Cooking  <https://hugligit.github.io/Recipes/>`_
+* `Mini Projects  <https://hugligit.github.io/miniprojects/>`_
 
 .. * `a link`_.
 .. .. _a link: https://hugligit.github.io/FdA/html/index.html
+
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   snippets/snippets.rst
