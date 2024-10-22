@@ -11,7 +11,7 @@ Organized collection of random facts.
 
 
 
-* `FdA <https://hugligit.github.io/FdA/html/>`_
+* `FdA <https://hugligit.github.io/FdA/>`_
 * `School <https://hugligit.github.io/school/>`_
 * `Cooking  <https://hugligit.github.io/Recipes/>`_
 * `Mini Projects  <https://hugligit.github.io/miniprojects/>`_
