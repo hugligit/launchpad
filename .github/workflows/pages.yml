@@ -2,7 +2,7 @@ name: Deploy Sphinx documentation to Pages
 
 on:
   push:
-    branches: ["main"]   # or "master" if that's your branch
+    branches: ["master"]   # or "master" if that's your branch
   workflow_dispatch:
 
 permissions:
