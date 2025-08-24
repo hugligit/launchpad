@@ -2,7 +2,7 @@ name: Build and Deploy Docs
 
 on:
   push:
-    branches: [ main ]  # or whatever your default branch is
+    branches: [ master ]  # or whatever your default branch is
 
 permissions:
   contents: write  # needed for gh-pages push
