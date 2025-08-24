@@ -11,12 +11,10 @@ Organized collection of random facts.
 
 
 
-* `FdA <https://hugligit.github.io/FdA/>`_
-* `School <https://hugligit.github.io/school/>`_
-* `Cooking  <https://hugligit.github.io/Recipes/>`_
-* `Mini Projects  <https://hugligit.github.io/miniprojects/>`_
-* `installations <../inst/>`_
-* `miniprojects <../miniprojects/>`_
+* `School <../school/>`_
+* `Cooking  <../cooking/>`_
+* `Installations <../installations/>`_
+* `Mini Projects <../miniprojects/>`_
 
 .. * `a link`_.
 .. .. _a link: https://hugligit.github.io/FdA/html/index.html

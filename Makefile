@@ -8,6 +8,38 @@ SPHINXBUILD   ?= sphinx-build
 SOURCEDIR     = source
 BUILDDIR      = docs
 
+
+SYMLINKS_FILE := symlinks.txt
+
+.PHONY: symlinks
+symlinks:
+	@echo "Creating symlinks..."
+	@while read line; do \
+		case $$line in \#*) continue ;; esac; \
+		set -- $$line; \
+		target=$$1; \
+		link=$$2; \
+		mkdir -p $$(dirname $$link); \
+		[ -e $$link ] || ln -s $$target docs/$$link; \
+	done < $(SYMLINKS_FILE)
+
+
+
+.PHONY: clean-symlinks
+clean-symlinks:
+	@echo "Removing symlinks..."
+	@while read line; do \
+		case $$line in \#*) continue ;; esac; \
+		set -- $$line; \
+		link=$$2; \
+		[ -L docs/$$link ] && rm docs/$$link; \
+	done < $(SYMLINKS_FILE)
+
+
+
+
+
+
 # Put it first so that "make" without argument is like "make help".
 help:
 	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
@@ -17,7 +49,6 @@ help:
 publish:
 	$(SPHINXBUILD) -b html "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 	touch "$(BUILDDIR)/.nojekyll"
-	ln -s ~/Documents/Projects/miniprojects/docs/html $(BUILDDIR)/html/miniprojects
 
 
 
